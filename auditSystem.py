@@ -302,9 +302,6 @@ if __name__ == "__main__":
                     print("Audit Record created")
                     print(accounts)
         
-        #patients = {'patient1': '121', 'patient2': '122', 'patient3': '123', 'patient4': '124', 'patient5': '125'}
-        #accounts = {'auditc1': '126', 'auditc2': '127'}
-        
         if(selection == '2'):
             print("Please select the audit company to create and upload records")
             print("please enter the audit company name")
@@ -364,8 +361,6 @@ if __name__ == "__main__":
                         print("Authentication Failed")
                         break
 
-        #c = {'7550740bb08d0b177881ae6b1042e8ef2f29dc2995a582bf62bba1f065652a22': 'e5835c223bb999eabfafc602bcd8cfd40f33eab7d141b8d7f6f5299b5ce0de38', 'e5835c223bb999eabfafc602bcd8cfd40f33eab7d141b8d7f6f5299b5ce0de38': '7550740bb08d0b177881ae6b1042e8ef2f29dc2995a582bf62bba1f065652a22', '74cbf64c04b6080ee2b1978dbb6c359045b4451b18aaabbfed1f44496cfc6fee': 'bc40fbbf5984866d8850db2a9973c687ee8f4d7f8985cb8cac889f703c04a054', 'bc40fbbf5984866d8850db2a9973c687ee8f4d7f8985cb8cac889f703c04a054': '74cbf64c04b6080ee2b1978dbb6c359045b4451b18aaabbfed1f44496cfc6fee', '369a8c28ee5927481ec34fb896910f3724dd00a1bc32eb51c891bbc2ee4a6995': 'f02018132f462123c856ab2584bc4aeeaff19cf6147819a9020b2646a695a972', 'f02018132f462123c856ab2584bc4aeeaff19cf6147819a9020b2646a695a972': '369a8c28ee5927481ec34fb896910f3724dd00a1bc32eb51c891bbc2ee4a6995', 'ca5d2f76b9de5913b1ed2c80293c8a1ffe97851499b04fffc64432102afc6d38': 'ca5d2f76b9de5913b1ed2c80293c8a1ffe97851499b04fffc64432102afc6d38'}
-
         if(selection == '4'):
             print("Query for patient records")
             print("Please enter the username of the patient")
@@ -390,9 +385,7 @@ if __name__ == "__main__":
                         else:
                             print("The record does not exist")
 
-        #l = ['7550740bb08d0b177881ae6b1042e8ef2f29dc2995a582bf62bba1f065652a22', '74cbf64c04b6080ee2b1978dbb6c359045b4451b18aaabbfed1f44496cfc6fee', '369a8c28ee5927481ec34fb896910f3724dd00a1bc32eb51c891bbc2ee4a6995']
-        #r = ['e5835c223bb999eabfafc602bcd8cfd40f33eab7d141b8d7f6f5299b5ce0de38', 'bc40fbbf5984866d8850db2a9973c687ee8f4d7f8985cb8cac889f703c04a054', 'f02018132f462123c856ab2584bc4aeeaff19cf6147819a9020b2646a695a972']
-        #check = ['e5835c223bb999eabfafc602bcd8cfd40f33eab7d141b8d7f6f5299b5ce0de38', 'f02018132f462123c856ab2584bc4aeeaff19cf6147819a9020b2646a695a972', 'ca5d2f76b9de5913b1ed2c80293c8a1ffe97851499b04fffc64432102afc6d38']
+       
         if(selection == '5'):
             print("Verify Authenticity of patient record")
             print("Please enter the username of the patient")
