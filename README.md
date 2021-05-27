@@ -27,4 +27,31 @@ It consists of six components.
 
 ## Implementation
 
-<img src="screenshots/s1.jpg">
+<img src="screenshots/s1.JPG" >
+<img src="screenshots/s3.JPG" >
+<img src="screenshots/s4.JPG" >
+
+Five Patient Records and Two Audit Company records are created
+
+After we created the accounts, we have empty accounts without any records. So, we can select the option 2 to store the EHR records. The system asks for the audit company which wants to create a record for certain patient. To do this, we cannot directly allow anyone to access. So, we ask for password authentication for the audit company. If it is successful, we request for the patient record name. Once we enter the patient’s name, the record will be upload to the server and system gives feedback if it is successful. In the background the system converts the plain text file of the audit records to encrypted files and keys are generated. This helps in Confidentiality and Integrity of records during transit and storage.
+
+<img src="screenshots/s5.JPG" >
+<img src="screenshots/s6.JPG" >
+
+Audit companies creates a merkle tree with the patient audit record content to monitor the data. The root of the merkle tree is recorded.
+
+<img src="screenshots/s7.JPG" >
+
+Patients can query the audit data from the system. The system requests the patient to authenticate. If it is successful, it informs the status if record exists or does not exists. As a proof for the record existence, it returns audit trial to self-verify if it is true.
+
+The system allows the patient to verify the authenticity of record. It helps to know if the record is secure and untampered. The patient can trust the record after verification.
+
+<img src="screenshots/s8.JPG" >
+<img src="screenshots/s9.JPG" >
+<img src="screenshots/s12.JPG" >
+
+The patient audit records keeps updating with every change done by the patient and the auditing company. The records will never be the same. So, it is necessary to verify if the record is consistent. To verify consistency the audit companies, take two files older and new version of it and verify that all the old version is available in the same order and if any new data is added after the old data. At every point, the system keeps track of all the changes and gives the proof for immutability existence in the system for the records.
+
+<img src="screenshots/s13.JPG" >
+<img src="screenshots/s15.JPG" >
+
